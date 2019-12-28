@@ -527,6 +527,8 @@ void WiFiClient::stop()
     WiFiClass::_handleArray[_socketIndex] = -1;
     WiFiClass::_typeArray[_socketIndex] = -1;
     _socketIndex = NO_SOCKET_AVAIL;
+    rx_fillLevel = 0;
+    rx_currentIndex = 0;
     
 }
 
