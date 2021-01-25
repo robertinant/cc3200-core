@@ -116,7 +116,7 @@ __attribute__((weak)) void I2CIntHandler(void) {}
 // Reserve space for the system stack.
 //
 //*****************************************************************************
-static uint32_t pui32Stack[8192];
+static uint32_t pui32Stack[8192] __attribute__ ((aligned(8)));
 
 //*****************************************************************************
 //
